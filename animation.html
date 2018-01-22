@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>animate</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }    
+      .animate{
+        width:200px;
+        height: 200px;
+        background-color: limegreen;
+        animation-name: Rani;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: relative;
+        }
+        @keyframes Rani{
+            0%{background-image:url(img/flower1.jpeg);left:0px; top:0px;}
+            25%{background-image:url(img/flower2.jpeg);left:85%; top:0px;}
+            50%{background-image: url(img/flower3.jpeg);left:85%; top:65%;}
+            75%{background-image: url(img/flower4.jpeg);left:0px; top:65%;}
+            100%{background-image: url(img/flower5.jpeg);left:0px; top:0px;}
+        }
+        .animate1{
+            width: 200px;
+            height:200px;
+            background-color: limegreen;
+            margin-left: 200px;
+            position: relative;
+            animation-name:flower;
+            animation-duration:4s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes flower{
+            0%{background-image:url(img/cartoon1.png);left:0px; top:0px;}
+            25%{background-image: url(img/cartoon2.png);left:700px; top:0px;}
+            75%{background-image: url(img/cartoon4.jpeg);left:0px; top:0px;}
+            100%{background-image: url(img/cartoon.png);left:0px; top:0px;} 
+        }
+    </style>
+</head>
+<body background="img\background.jpeg">
+    <div class="animate"></div>
+    <div class="animate1"></div>
+</body>
+</html>
